@@ -1,4 +1,27 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+
+    "launch": {
+        "configurations": [
+            {
+                "name": "Java: Current File",
+                "type": "java",
+                "request": "launch",
+                "mainClass": "com.example.demo.DemoApplication", // 替换为你的主类路径
+                "vmArgs": "-Dfile.encoding=UTF-8 -Dspring.devtools.restart.enabled=true"
+            }
+        ]
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "liveServer.settings.multiRootWorkspaceName": "spring_boot",
+
+    // "liveServer.settings.port": 5500,
+    // "liveServer.settings.root": "./demo", // 如果你的工作区根目录就是项目根目录，可留空
+    // "liveServer.settings.wait": 500,
+    // "liveServer.settings.customBrowser": "chrome"
 }
